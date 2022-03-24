@@ -4,19 +4,19 @@ include("templates/top.php")
 
 ?>
 
+<body>
+   <header>
+      <h1 id="PinTracker"> PinTracker </h1>
+
+      <div class="register">
+         <a class="primary-button" href="connexion.php">Connexion</a>
+         <a class="secondary-button" href="inscription.php">Inscription</a>
+      </div>
+
+   </header>
 
 
-  <div id="register">
-    <a href ="connexion.php" >   
-        <button> Connexion </button> 
-      </a>
-      <a href ="inscription.php" > 
-        <button> Inscription </button>
-      </a>
-  </div>
+   <?php
+   include("templates/bottom.php")
 
-
-<?php
-  include("templates/bottom.php")
-
-?>
+   ?>
