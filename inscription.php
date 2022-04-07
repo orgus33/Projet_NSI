@@ -7,6 +7,5 @@ include("templates/top.php")
 
 
 <?php
-  include("templates/bottom.php")
-
+include("templates/bottom.php")
 ?>
