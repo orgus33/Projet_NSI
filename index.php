@@ -1,9 +1,8 @@
 <?php
 
 include("templates/top.php")
+
 ?>
-<link rel="stylesheet" href="index.css">
-</head>
 
 <body>
    <header>
