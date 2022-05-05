@@ -1,7 +1,7 @@
 <?php
 
 include("templates/top.php");
-include_once("templates/bd.php");
+require_once("templates/bd.php");
 ?>
 
 <link rel="stylesheet" type="text/css" href="styles/connexion.css">
@@ -10,10 +10,10 @@ include_once("templates/bd.php");
 <?php
 if (isset($_GET['mail'])) {
 
-  $sql = "SELECT email FROM user";
-  $sql->query();
+  // $sql = "SELECT email FROM user";
+  // $sql->query();
 
-  $stmt->execute();
+  // $stmt->execute();
 } else {
 ?>
   <form id="form1" method="GET" action="TP9-1_target.php">
