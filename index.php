@@ -78,7 +78,7 @@ include_once("templates/bd.php");
 <?php
       }
 ?>
-</body>
+
 
 
 
