@@ -6,3 +6,12 @@
 .day {
 	margin: 5px 0;
 }
+
+.sec-1 {
+	display: flex;
+}
+
+.box h1 {
+	font-weight: bold;
+	font-size: 1.8em;
+}

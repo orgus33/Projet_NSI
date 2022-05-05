@@ -34,16 +34,28 @@ include("templates/top.php")
 
         <div class="box">
             <h1 class="title">Statistique</h1>
-            <form action="/">
-                <div class="select-dropdown">
-                    <select name="type_sport">
-                        <option value="course">Course</option>
-                        <option value="musculation">Musculation</option>
-                    </select>
-                </div>
+            <div class="stats">
+                <ul>
+                    <li>Kilomètres : </li>
+                    <li>Temps : </li>
+                    <li>Pompes : </li>
+                    <li>Abdo : </>
+                </ul>
+            </div>
 
-                <input type="submit" value="Suivant →">
-            </form>
+            <div class="seance">
+                <p>Séances effectué : 1 séance sur 4 réalisés </p>
+            </div>
+
+            <div class="streak">
+                <p>Flammes : 15</p>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <h1>Performance moyenne : </h1>
+            <p>[Graphique]</p>
         </div>
     </div>
 
