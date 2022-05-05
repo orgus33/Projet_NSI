@@ -1,6 +1,13 @@
 <?php
 
-include("templates/top.php")
+session_start();
+// $_SESSION['compte'] = "Robin";
+
+include("templates/top.php");
+
+
+
+include_once("templates/bd.php");
 
 ?>
 
@@ -8,14 +15,16 @@ include("templates/top.php")
    <header>
       <h1 class="big-title"> PinTracker </h1>
 
-      <div class="register">
-         <a class="primary-button" href="connexion.php"> Connexion </a>
-         <a class="secondary-button" href="inscription.php">Inscription</a>
-      </div>
-   </header>
+      <?php
 
+      if (isset($_SESSION["compte"])) {
+      ?>
+         <div class="register">
+            <a class="secondary-button" href="connexion.php"> Mon compte </a>
+         </div>
+   </header>
    <h2> Bonjour, <br>
-      Bienvenue !
+      Bienvenue <?= $_SESSION["compte"] ?> !
    </h2>
 
    <div class="sec-1">
@@ -42,7 +51,37 @@ include("templates/top.php")
       </div>
    </div>
 
+<?php
+      } else {
+?>
+   <div class="register">
+      <a class="primary-button" href="connexion.php"> Connexion </a>
+      <a class="secondary-button" href="inscription.php">Inscription</a>
+   </div>
+   </header>
 
-   <?php
-   include("templates/bottom.php")
-   ?>
+   <h2> Bonjour, <br>
+      Bienvenue !
+   </h2>
+
+   <div class="sec-1">
+      <div class="box">
+         <h1 class="title">Dernière performance</h1>
+         <p>Veuillez vous connecter pour voir vos performance !</p>
+      </div>
+
+      <div class="box">
+         <h1 class="title">Ajouter une performance</h1>
+         <p>Veuillez vous connecter pour ajouter vos performances !</p>
+      </div>
+   </div>
+<?php
+      }
+?>
+</body>
+
+
+
+<?php
+include("templates/bottom.php")
+?>
