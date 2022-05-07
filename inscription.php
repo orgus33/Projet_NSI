@@ -30,12 +30,11 @@ require_once("templates/bd.php");
             <input type="number" id="taille" name="taille" min="1" max="2.5" class="form-field animation a9" placeholder="Taille">
 
             <div class="radio form-field animation a9">
+                <input type="radio" id="homme" name="sexe" value="homme" class=" animation a11">
                 <label for="homme" class="animation a10">Homme</label>
-                <input type="radio" name="sexe" value="homme" class=" animation a11">
-            </div>
 
-            <div class="radio form-field animation a9"> <label class="sexe" for="femme" class="">Femme</label>
-                <input type="radio" id="femme" name="sexe" value="femme">
+                <input type="radio" id="femme" name="sexe" value="femme" class=" animation a11">
+                <label class="sexe" for="femme" class="animation a10">Femme</label>
             </div>
 
             <p class="animation a14"><a href="#">Mot de passe oublié</a></p>
