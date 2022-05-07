@@ -20,7 +20,7 @@ require_once("templates/bd.php");
             <h4 class="animation a2">Inscrivez vous en remplissant le formulaire ci-dessous :</h4>
         </div>
 
-        <div class="form">
+        <form action="" class="form">
             <input type="text" class="form-field animation a3" placeholder="Pseudo">
             <input type="email" class="form-field animation a4" placeholder="Adresse mail">
             <input type="password" class="form-field animation a5" placeholder="Mot de passe">
@@ -39,7 +39,9 @@ require_once("templates/bd.php");
 
             <p class="animation a14"><a href="#">Mot de passe oublié</a></p>
             <input type="submit" value="Valider" class="animation a15">
-        </div>
+        </form>
+
+
 
     </div>
     <div class="right"></div>
